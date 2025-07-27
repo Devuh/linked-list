@@ -7,3 +7,5 @@ linkedList.append("there.");
 linkedList.prepend("Why...");
 
 console.log("Size: " + linkedList.size());
+
+console.log(linkedList.toString());
