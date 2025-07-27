@@ -4,5 +4,6 @@ let linkedList = new LinkedList();
 
 linkedList.append("Hello");
 linkedList.append("there.");
+linkedList.prepend("Why...");
 
-console.log(linkedList);
+console.log(linkedList.head.nextNode);
