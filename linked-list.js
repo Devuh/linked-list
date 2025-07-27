@@ -104,6 +104,17 @@ class LinkedList {
     return null;
   }
 
+  insertAt(value, index) {
+    if(index == this.size()) {
+      this.append(value);
+    } else if(index == 0) {
+      this.prepend(value);
+    } else {
+      let previousNode = this.at(index - 1);
+      previousNode.nextNode = new Node(value, this.at(index));
+    }
+  }
+
   toString() {
     let string = "";
     let currentNode = this.#head;

@@ -8,8 +8,10 @@ linkedList.prepend("Why...");
 
 console.log("Size: " + linkedList.size());
 
-console.log(linkedList.pop());
-
 console.log(linkedList.toString());
 
 console.log(linkedList.find("Hello"));
+
+linkedList.insertAt("Oh my...", 2);
+
+console.log(linkedList.toString());
