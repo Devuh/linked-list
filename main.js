@@ -6,4 +6,4 @@ linkedList.append("Hello");
 linkedList.append("there.");
 linkedList.prepend("Why...");
 
-console.log(linkedList.head.nextNode);
+console.log("Size: " + linkedList.size());
