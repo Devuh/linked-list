@@ -115,6 +115,17 @@ class LinkedList {
     }
   }
 
+  removeAt(index) {
+    if(index == 0) {
+      this.#head = this.#head.nextNode;
+    } else if(index == this.size() - 1) {
+      this.pop();
+    } else {
+      let previousNode = this.at(index - 1);
+      previousNode.nextNode = this.at(index + 1);
+    }
+  }
+
   toString() {
     let string = "";
     let currentNode = this.#head;

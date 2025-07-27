@@ -15,3 +15,7 @@ console.log(linkedList.find("Hello"));
 linkedList.insertAt("Oh my...", 2);
 
 console.log(linkedList.toString());
+
+linkedList.removeAt(2);
+
+console.log(linkedList.toString());
