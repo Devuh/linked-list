@@ -12,4 +12,4 @@ console.log(linkedList.pop());
 
 console.log(linkedList.toString());
 
-console.log(linkedList.contains("Hello"));
+console.log(linkedList.find("Hello"));

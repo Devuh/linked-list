@@ -91,6 +91,19 @@ class LinkedList {
     return false;
   }
 
+  find(value) {
+    let currentNode = this.#head;
+    let index = 0;
+
+    while(currentNode != null) {
+      if(currentNode.value == value) return index;
+      currentNode = currentNode.nextNode;
+      index++;
+    }
+
+    return null;
+  }
+
   toString() {
     let string = "";
     let currentNode = this.#head;
