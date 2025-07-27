@@ -42,6 +42,31 @@ class LinkedList {
     return size;
   }
 
+  head() {
+    return this.#head;
+  }
+
+  tail() {
+    let currentNode = this.#head;
+
+    while(currentNode.nextNode != null) {
+      currentNode = currentNode.nextNode;
+    }
+
+    return currentNode;
+  }
+
+  at(index) {
+    if(index >= this.size()) return "Oops! Out of range.";
+    let currentNode = this.#head;
+
+    for(let i = 0; i < index; i++) {
+      currentNode = currentNode.nextNode;
+    }
+
+    return currentNode;
+  }
+
   toString() {
     let string = "";
     let currentNode = this.#head;
